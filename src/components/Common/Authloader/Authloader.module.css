@@ -1,4 +1,8 @@
-.preloader {
-  height: 300px;
-  width: 400px;
+.authloader {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.loadBlock {
+
 }

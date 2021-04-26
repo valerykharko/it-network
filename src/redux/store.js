@@ -6,35 +6,28 @@ let store = {
   _state: {
     profilePage: {
       posts: [
-        {id: 1, message: 'Hi, how are you?', likesCount: 12},
-        {id: 2, message: 'It\'s my first post', likesCount: 11},
-        {id: 3, message: 'Blabla', likesCount: 11},
-        {id: 4, message: 'Dada', likesCount: 11}
+        { id: 1, message: "HI, how are u?", count: 5 },
+        { id: 2, message: "It is my first post", count: 7 },
       ],
-      newPostText: 'it-kamasutra.com'
+      newPostText: "Здесь могла быть Ваша реклама",
     },
     dialogsPage: {
       dialogs: [
-        {id: 1, name: 'Dimych'},
-        {id: 2, name: 'Andrew'},
-        {id: 3, name: 'Sveta'},
-        {id: 4, name: 'Sasha'},
-        {id: 5, name: 'Viktor'},
-        {id: 6, name: 'Valera'}
+        { id: 1, name: "Valera" },
+        { id: 2, name: "Dima" },
+        { id: 3, name: "Alena" },
       ],
       messages: [
-        {id: 1, message: 'Hi'},
-        {id: 2, message: 'How is your it-kamasutra?'},
-        {id: 3, message: 'Yo'},
-        {id: 4, message: 'Yo'},
-        {id: 5, message: 'Yo'}
+        { id: 1, message: "HI" },
+        { id: 2, message: "All is ok" },
+        { id: 3, message: "WOW" },
       ],
-      newMessageBody: ""
+      newMessageBody: "",
     },
-    sidebar: {}
+    sidebar: {},
   },
   _callSubscriber() {
-    console.log('State changed');
+    console.log("State changed");
   },
 
   getState() {
@@ -42,7 +35,7 @@ let store = {
     return this._state;
   },
   subscribe(observer) {
-    this._callSubscriber = observer;  // observer
+    this._callSubscriber = observer; // observer
   },
 
   dispatch(action) {
@@ -51,10 +44,7 @@ let store = {
     this._state.sidebar = sidebarReducer(this._state.sidebar, action);
 
     this._callSubscriber(this._state);
-  }
-}
-
+  },
+};
 
 export default store;
-window.store = store;
-// store - OOP

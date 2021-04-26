@@ -7,3 +7,24 @@
     height: 60px;
     width: 200px;
 }
+
+.loginBlock {
+    font-weight: bold;
+    position: relative;
+    top: -55px;
+    right: 50px;
+    float: right;
+    color: black;
+}
+
+.loginBlock a {
+    color: white;
+}
+
+.emailBlock {
+    position: relative;
+    top: -35px;
+    right: -10px;
+    float: right;
+    color: white;
+}

@@ -1,0 +1,9 @@
+.MAIN {
+  position: relative;
+  margin-left: 10px;
+  padding-bottom: 50px;
+}
+.userPhoto {
+  height: 100px;
+  width: 100px;
+}

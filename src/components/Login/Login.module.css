@@ -1,0 +1,22 @@
+.login {
+  padding: 10px;
+}
+
+.formSummaryError {
+  border: solid red 2px;
+  padding: 5px;
+  color: red;
+}
+
+.butL {
+  height: 30px;
+  width: 70px;
+  margin-top: 10px;
+  font-family: "Comic Sans MS", serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.remMe {
+  margin-bottom: 5px;
+}
